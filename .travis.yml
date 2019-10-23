@@ -27,7 +27,10 @@ script:
 install:
   npm install -g surge
 
+before_deploy:
+  npm run build
+
 deploy:
   provider: surge
-  project: dist
+  project: ./build/
   skip_cleanup: true
