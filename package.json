@@ -15,7 +15,8 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "deploy": "surge ./dist --domain https://travis-app.surge.sh"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
@@ -44,7 +45,8 @@
     "eslint-plugin-ember": "^7.1.0",
     "eslint-plugin-node": "^10.0.0",
     "loader.js": "^4.7.0",
-    "qunit-dom": "^0.9.0"
+    "qunit-dom": "^0.9.0",
+    "surge": "^0.21.3"
   },
   "engines": {
     "node": "8.* || >= 10.*"
