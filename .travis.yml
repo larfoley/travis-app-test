@@ -29,11 +29,8 @@ install:
 
 before_deploy:
   - npm run build
-  - pwd
-  - ls ./dist
 
 deploy:
   provider: surge
   project: ./dist
   skip_cleanup: true
-  domain: travis-app.surge.sh
