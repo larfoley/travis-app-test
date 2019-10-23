@@ -34,5 +34,5 @@ before_deploy:
 
 deploy:
   provider: surge
-  project: ./build/
+  project: $HOME/dist/
   skip_cleanup: true
