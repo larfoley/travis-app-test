@@ -28,9 +28,9 @@ install:
   npm install -g surge
 
 before_deploy:
-  npm run build
-  pwd
-  ls -a
+  - npm run build
+  - pwd
+  - ls -a
 
 deploy:
   provider: surge
