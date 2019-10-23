@@ -15,8 +15,7 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test",
-    "deploy": "surge ./dist --domain https://travis-app.surge.sh"
+    "test": "ember test"
   },
   "devDependencies": {
     "@ember/optional-features": "^1.0.0",
