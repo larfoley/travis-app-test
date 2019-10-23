@@ -19,6 +19,14 @@ env:
     - JOBS=1
 
 script:
+  - npm install
   - npm run lint:hbs
   - npm run lint:js
   - npm test
+
+install:
+  npm install -g surge
+
+deploy:
+  provider: surge
+  project: ./dist/
