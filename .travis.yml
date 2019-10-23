@@ -30,9 +30,9 @@ install:
 before_deploy:
   - npm run build
   - pwd
-  - ls -a
+  - ls ./dist
 
 deploy:
   provider: surge
-  project: $HOME/dist/
+  project: ./dist
   skip_cleanup: true
